@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile 简单示范</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1>欢迎来到 jQuery Mobile</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>这是一个简单的 jQuery Mobile 页面示例。</p>
+            <a href="#pagetwo" data-role="button">跳转到第二页</a>
+        </div>
+        <div data-role="footer">
+            <h4>页脚内容</h4>
+        </div>
+    </div>
 
+    <div data-role="page" id="pagetwo">
+        <div data-role="header">
+            <h1>第二页</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>这是第二页的内容。</p>
+            <a href="#pageone" data-role="button">返回首页</a>
+        </div>
+        <div data-role="footer">
+            <h4>页脚内容</h4>
+        </div>
+    </div>
+</body>
+</html>
