@@ -6,32 +6,49 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+    .container {
+       display: flex;
+       align-items: center; /*垂直居中对齐*/
+    }
+
+   .image-container {
+       flex: 1; /*图片占据左侧空间*/
+       text-align: center; /*图片居中*/
+   }
+
+   .text-container {
+       flex: 1; /*文本占据右侧空间*/
+       padding-left: 10px; /*调整文本与图片之间的间距*/
+   }
+
+   .top-text, .bottom-text {
+       text-align: left; /*文本左对齐*/
+   }
+</style>
 </head>
 <body>
     <div data-role="page" id="pageone">
         <div data-role="header">
-            <h1>欢迎来到 jQuery Mobile</h1>
+            <h1>欢迎来到 Spz的服务器新闻</h1>
         </div>
         <div data-role="main" class="ui-content">
-            <p>这是一个简单的 jQuery Mobile 页面示例。</p>
-            <a href="#pagetwo" data-role="button">跳转到第二页</a>
+            <p>由于特别原因，尚未制作</p>
+            <div class="container">
+       <div class="image-container">
+           <img src="your-image-url.jpg" alt="描述图片">
+       </div>
+       <div class="text-container">
+           <div class="top-text">上面的文字</div>
+           <div class="bottom-text">下面的文字</div>
+       </div>
+   </div>
         </div>
+        
         <div data-role="footer">
             <h4>页脚内容</h4>
         </div>
     </div>
 
-    <div data-role="page" id="pagetwo">
-        <div data-role="header">
-            <h1>第二页</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <p>这是第二页的内容。</p>
-            <a href="#pageone" data-role="button">返回首页</a>
-        </div>
-        <div data-role="footer">
-            <h4>页脚内容</h4>
-        </div>
-    </div>
-</body>
+ </body>
 </html>
